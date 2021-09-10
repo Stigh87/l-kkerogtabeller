@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Løkker og tabeller</h2>
+    <ul>
+        <li>
+            Løkker
+            <ul> 
+                <li>while</li>
+                <li>for</li>
+            </ul>
+        </li>
+        <li>Tabeller - "array"</li>
+    </ul>
+<hr>
+    <script type="text/javascript">
+        var i = 0;
+        var ii;
+        var iii;
+
+        while (i <= 4) { 
+            document.write('Test-While ' + i + ' ')
+            i++;
+        }
+
+        document.write('<hr>')
+
+        for (var ii = 1; ii <= 5; ii++) {
+            document.write('<br>' + 'Test-for ' + ii);
+        }
+
+        document.write('<hr>')
+
+        var names = ['Array1', 'Array2', 'Array3', 'Array4', 'Array5'];
+        for (var iii = 0; iii < names.length; iii++) {
+            if (names[iii] != undefined) {
+                document.write('<br>' + 'test - ' + names[iii] + ' - Arraynr:' + iii);
+            }
+        }
+        // vi kan bruke "push" og "pop" til arrays: 
+        // Eks: names.push('Array6') - vil putte Array6 inn i arrayet. 
+        // Eks: names.pop() - fjerner den siste i lista/arrayet.
+        document.write('<hr>')
+
+    </script>
+
+</body>
+</html>
